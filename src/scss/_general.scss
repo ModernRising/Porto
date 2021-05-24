@@ -49,6 +49,7 @@
     }
     &__menu {
         display: flex;
+        z-index: 9;
     }
     &__menu-item {
         margin-right: 60px;
@@ -242,6 +243,7 @@
         margin-top: 163px;
         margin-left: 60px;
         min-width: 0;
+        z-index:1;
         &__item {
             min-width: 0;
            margin-left: 30px;
