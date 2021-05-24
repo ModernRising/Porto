@@ -34,9 +34,16 @@
 
 .slider .slick-arrow.slick-prev{
     background: url("../icons/arrow-left.svg") 0 0 no-repeat;
+    @media (max-width:991px) {
+        left: 10%;
+        display: none;
+    }
 }
 
 .slider .slick-arrow.slick-next {
     background: url("../icons/arrow-right.svg") 0 0 no-repeat;
     left: 4%;
+    @media (max-width:991px) {
+        left: 20%;
+    }
 }
