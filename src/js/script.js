@@ -6,11 +6,13 @@ $(document).ready(function(){
         draggable: false,
         rows: 2,
         slidesPerRow:2,
+        slidesToScroll: 1,
         responsive: [
             {
-              breakpoint: 767,
+              breakpoint: 768,
               settings: {
                 arrows:false,
+                slidesPerRow:1,
               }
             }
         ]
