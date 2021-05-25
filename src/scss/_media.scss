@@ -235,6 +235,11 @@
                 width: 33px;
                 height: 3px;
             }
+            &_active {
+                .bar3 {
+                    transform: rotate(45deg) translate(-7px, -6px);
+                }
+            }
         }
         &__menu-link {
             font-size: 16px;
@@ -248,6 +253,9 @@
         &__descr {
             font-size: 12px;
             margin-top: 20px;
+            p {
+                line-height: 15px;
+            }
             p:nth-child(1n+2) {
                 margin-top: 20px;
             }
@@ -263,7 +271,12 @@
             margin-left: 10px;
             &_bar {
                 margin-left: 15px;
-
+                &_75 {
+                    margin-left: 35px;
+                }
+                &_65 {
+                    margin-left: 10px;
+                }
             }
             &_tools {
                 margin-left: 40px;

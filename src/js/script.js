@@ -35,6 +35,5 @@ hamburger.addEventListener('click', () => {
     menu.classList.toggle("banner__menu_active");
 });
 
-
 });
 
