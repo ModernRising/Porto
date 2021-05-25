@@ -10,7 +10,7 @@
    .banner {
        min-height: 720px;
        &__name {
-           font-size: 22px;
+           font-size: 24px;
        }
        &__menu-link {
            font-size: 16px;
@@ -102,18 +102,9 @@
         &__name {
             margin: 0 auto;
         }
-        &__subtitle {
-            
-        }
-        &__latest {
-            
-        }
     }
 
     .skills {
-       &__aside {
-           
-       } 
        &__introduce-profile {
            font-size: 16px;
        }
@@ -182,28 +173,28 @@
 
     .skills {
         &__introduce {
-            margin-left: 30px;
+            margin-left: 25px;
             &_bar {
-                margin-left: 30px;
+                margin-left: 25px;
             }
         }
         &__introduce-profile {
-            font-size: 14px;
+            font-size: 15px;
         }
         &__introduce-info {
-            font-size: 14px;
-            margin-left: 65px;
+            font-size: 15px;
+            margin-left: 25px;
             &_bar {
-                margin-left: 26px;
+                margin-left: 15px;
                 &_75 {
-                    margin-left: 43px;
+                    margin-left: 40px;
                 }
                 &_65 {
-                    margin-left: 16px;
+                    margin-left: 11px;
                 }
             }
             &_tools {
-                margin-left: 65px;
+                margin-left: 70px;
             }
         }
         &__introduce-info_bar {
@@ -225,6 +216,78 @@
         }
         &__menu {
             font-size: 14px;
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .banner {
+        min-height: 410px;
+        padding: 36px 0px 0px 0px;
+        &__intro {
+            margin-top: 100px;
+        }
+        &__title {
+            font-size: 24px;
+        }
+        .hamburger {
+            .bar1, .bar2, .bar3 {
+                width: 33px;
+                height: 3px;
+            }
+        }
+        &__menu-link {
+            font-size: 16px;
+        }
+    }
+    .title {
+        font-size: 24px;
+    }
+    .about {
+        padding: 30px 0 25px 0;
+        &__descr {
+            font-size: 12px;
+            margin-top: 20px;
+            p:nth-child(1n+2) {
+                margin-top: 20px;
+            }
+        }
+    }
+    .skills {
+        padding: 25px 0px;
+        &__introduce-profile {
+            font-size: 12px;
+        }
+        &__introduce-info {
+            font-size: 12px;
+            margin-left: 10px;
+            &_bar {
+                margin-left: 15px;
+
+            }
+            &_tools {
+                margin-left: 40px;
+            }
+        }
+        &__introduce-info_bar {
+            width: 150px;
+           }
+    }
+
+    .portfolio {
+        &__descr {
+            padding: 0;
+        }
+        &__text {
+            font-size: 12px;
+        }
+    }
+    .footer {
+        flex-wrap: wrap;
+        &__menu {
+            &:nth-child(3) {
+                margin-top: 30px;
+            }
         }
     }
 }
