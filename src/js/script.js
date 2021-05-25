@@ -19,6 +19,12 @@ window.addEventListener("DOMContentLoaded", () => {
         ]
             
     });
+    $('a[href*="#"]').on('click', function() {
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+      }, 1000);
+      return false;
+    });
   });
 
 const hamburger = document.querySelector(".hamburger");
@@ -29,17 +35,6 @@ hamburger.addEventListener('click', () => {
     menu.classList.toggle("banner__menu_active");
 });
 
-const smoothLinks = document.querySelectorAll('a[href^="#"]');
-for (let smoothLink of smoothLinks) {
-    smoothLink.addEventListener('click', (e) => {
-        e.preventDefault();
-        const id = smoothLink.getAttribute('href');
-        document.querySelector(id).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-    });
-}
 
 });
 
