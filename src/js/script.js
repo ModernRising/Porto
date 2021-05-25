@@ -1,5 +1,6 @@
 
-$(document).ready(function(){
+window.addEventListener("DOMContentLoaded", () => {
+  $(document).ready(function(){
     $('.slider').slick({
         arrows:true,
         speed: 800,
@@ -26,5 +27,7 @@ const menu = document.querySelector(".banner__menu");
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle("hamburger_active");
     menu.classList.toggle("banner__menu_active");
+});
+
 });
 
