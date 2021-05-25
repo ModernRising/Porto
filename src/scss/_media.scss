@@ -296,7 +296,9 @@
         }
     }
     .footer {
-        flex-wrap: wrap;
+        &__container {
+            flex-wrap: wrap;
+        }
         &__menu {
             &:nth-child(3) {
                 margin-top: 30px;
